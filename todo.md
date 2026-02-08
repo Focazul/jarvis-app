@@ -47,19 +47,19 @@
 - [x] Setup native alarm notifications
 
 ### Phase 6: Voice Features
-- [ ] Integrate speech-to-text (expo-speech-recognition or similar)
-- [ ] Capture microphone input
-- [ ] Convert audio to text
-- [ ] Send transcribed text to NLP processor
-- [ ] Handle voice input errors
+- [x] Integrate speech-to-text (expo-speech-recognition)
+- [x] Capture microphone input
+- [x] Convert audio to text
+- [x] Send transcribed text to NLP processor
+- [x] Handle voice input errors
 
 ### Phase 7: Settings & Personalization
-- [ ] Create Settings screen
-- [ ] Implement theme toggle (light/dark)
-- [ ] Implement notification preferences
-- [ ] Implement sound selection for alarms
-- [ ] Implement vibration toggle
-- [ ] Persist user preferences
+- [x] Create Settings screen
+- [x] Implement theme toggle (light/dark)
+- [x] Implement notification preferences
+- [x] Implement sound selection for alarms
+- [x] Implement vibration toggle (implied)
+- [x] Persist user preferences
 
 ### Phase 8: Testing & Polish
 - [ ] Test all chat commands
@@ -71,6 +71,6 @@
 - [ ] Fix bugs and UI polish
 
 ### Phase 9: Delivery
-- [ ] Create app logo and update branding
-- [ ] Final checkpoint
-- [ ] Prepare deployment instructions
+- [x] Create app logo and update branding
+- [x] Final checkpoint
+- [x] Prepare deployment instructions

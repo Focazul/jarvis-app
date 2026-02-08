@@ -20,6 +20,15 @@ const MAPPING = {
   "bell.fill": "notifications-active",
   "chevron.left.forwardslash.chevron.right": "code",
   "chevron.right": "chevron-right",
+  "gearshape.fill": "settings",
+  "moon.fill": "nightlight-round",
+  "speaker.wave.2.fill": "volume-up",
+  "trash.fill": "delete",
+  "mic.fill": "mic",
+  "waveform": "graphic-eq",
+  "arrow.up": "arrow-upward",
+  "xmark.circle.fill": "cancel",
+  "brain.head.profile": "smart-toy",
 } as IconMapping;
 
 /**

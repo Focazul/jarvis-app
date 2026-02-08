@@ -89,6 +89,10 @@ export const tasksStorage = {
     const tasks = await this.getTasks();
     return tasks.filter((t) => !t.date);
   },
+
+  async clear(): Promise<void> {
+    await AsyncStorage.removeItem(TASKS_KEY);
+  },
 };
 
 // Alarms Storage
@@ -151,5 +155,9 @@ export const alarmsStorage = {
   async getActiveAlarms(): Promise<Alarm[]> {
     const alarms = await this.getAlarms();
     return alarms.filter((a) => a.active);
+  },
+
+  async clear(): Promise<void> {
+    await AsyncStorage.removeItem(ALARMS_KEY);
   },
 };

@@ -3,6 +3,7 @@ import { Appearance, View, useColorScheme as useSystemColorScheme } from "react-
 import { colorScheme as nativewindColorScheme, vars } from "nativewind";
 
 import { SchemeColors, type ColorScheme } from "@/constants/theme";
+import { settingsStorage } from "@/lib/settings-storage";
 
 type ThemeContextValue = {
   colorScheme: ColorScheme;
@@ -32,8 +33,25 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const setColorScheme = useCallback((scheme: ColorScheme) => {
     setColorSchemeState(scheme);
     applyScheme(scheme);
+    // Persist changes
+    settingsStorage.saveSettings({ theme: scheme === "dark" ? "dark" : "light" });
   }, [applyScheme]);
 
+  // Load theme from storage
+  useEffect(() => {
+    settingsStorage.getSettings().then((settings) => {
+      if (settings.theme === "system") {
+        const sys = Appearance.getColorScheme() ?? "light";
+        setColorSchemeState(sys);
+        applyScheme(sys);
+      } else {
+        setColorSchemeState(settings.theme as ColorScheme);
+        applyScheme(settings.theme as ColorScheme);
+      }
+    });
+  }, [applyScheme]);
+
+  // Listen to system changes if theme is system - simplified for now
   useEffect(() => {
     applyScheme(colorScheme);
   }, [applyScheme, colorScheme]);

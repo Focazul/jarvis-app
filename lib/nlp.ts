@@ -100,6 +100,7 @@ const INTENT_KEYWORDS = {
     "me acorde",
     "despertar",
     "lembrete",
+    "acordar",
   ],
   create_task: [
     "adicionar tarefa",
