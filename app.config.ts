@@ -32,7 +32,7 @@ const env = {
   appSlug: "jarvis-app",
   // S3 URL of the app logo - set this to the URL returned by generate_image when creating custom logo
   // Leave empty to use the default icon from assets/images/icon.png
-  logoUrl: "",
+  logoUrl: "https://private-us-east-1.manuscdn.com/sessionFile/Aj1NyGymyLgHnq5XxTFcAk/sandbox/4uptwgP6lkekpdzCnzvxpW-img-1_1770574494000_na1fn_aWNvbg.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvQWoxTnlHeW15TGdIbnE1WHhURmNBay9zYW5kYm94LzR1cHR3Z1A2bGtla3BkekNuenZ4cFctaW1nLTFfMTc3MDU3NDQ5NDAwMF9uYTFmbl9hV052YmcucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=YlGoIOncsPacAcGNVk9yVUnvRl9K5uzT05LuoCwEaQ3LT-XQG-uZ1dgu~AY3Xb3SQVcEwLc7Baty0VyFPQDYW5dykGRDlBdJQagl-TGwhwQvJX~0jIaGyRkVXI1djKtdghLCSgDwYwZwhH9X8-7vq4---RoUrGkicHwbkrH1oANblyvPtmuymP6U7qRHxWWrQJmbIxEbRb0urzBVWE81Kzig5O6i5QDpvImidMObQ8-zVtP4KqeKKV4TIKYJZ448LOZaWCINXxbKXVr0UELmK997R8nKYS0mfKaHsAjibgzvKPIQnXspm4JdvYQeLx1OWm5W6~SvO58tVHbUQ5Eopw__",
   scheme: schemeFromBundleId,
   iosBundleId: bundleId,
   androidPackage: bundleId,
