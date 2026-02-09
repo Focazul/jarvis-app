@@ -30,7 +30,7 @@ This guide explains how to build the Android APK for Jarvis.
     After a successful build, the APK will be located at:
     `android/app/build/outputs/apk/release/app-release.apk`
 
-    **Pre-built APK**: A pre-built version is available in the root directory as `jarvis-v1.0.0.apk`.
+    **Pre-built APK**: A pre-built version is available in the root directory as `jarvis-v1.1.0.apk`.
 
 ## Installation on Android
 
